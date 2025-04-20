@@ -1,0 +1,52 @@
+/* 星期字體加粗 */
+.fc-col-header-cell-cushion {
+    font-weight: bold;
+}
+
+/* 日期和星期字體改為黑色，去除底線 */
+.fc-col-header-cell-cushion,
+.fc-daygrid-day-number {
+    color: black;
+    text-decoration: none;
+}
+
+/* 去除日期的底線 */
+.fc-daygrid-day-number:hover {
+    text-decoration: none;
+}
+
+/* 邊框改為淺灰色 */
+.fc-theme-standard td, 
+.fc-theme-standard th,
+.fc-theme-standard .fc-scrollgrid {
+    border-color: #e0e0e0;
+}
+
+/* 確保背景色為白色，以增強對比度 */
+.fc-theme-standard .fc-scrollgrid,
+.fc-theme-standard .fc-daygrid-body,
+.fc-theme-standard .fc-view-harness {
+    background-color: white;
+}
+
+/* 如果需要，可以調整頭部背景色 */
+.fc-theme-standard .fc-col-header {
+    background-color: #f8f9fa;
+}
+/* 固定日期格子的高度 */
+.fc-daygrid-day-frame {
+    height: 100px; /* 設定固定高度 */
+    overflow: auto; /* 超出內容顯示滾動條 */
+}
+
+
+.fc-daygrid-day-frame::-webkit-scrollbar {
+width: 8px;
+}
+.fc-daygrid-day-frame::-webkit-scrollbar-thumb {
+background-color: #888;
+border-radius: 4px;
+}
+.fc-daygrid-day-frame::-webkit-scrollbar-thumb:hover {
+background-color: #555;
+}

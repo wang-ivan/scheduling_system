@@ -1,0 +1,59 @@
+
+/* 設定整體結構 */
+html, body {
+    height: 100%; /* 確保佔滿整個視窗 */
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA; /* 整體背景色 */
+}
+
+header {
+    background-color: #6C7B89; /* 標頭背景 */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bi {
+    color: #F6F0E3;
+}
+
+.container {
+    flex: 1; /* 主內容區域占滿剩餘空間 */
+    
+}
+.offcanvas {
+    background-color: #A9B7C5; /* 左側選單背景 */
+}
+.offcanvas a {
+    color: white; /* 選單文字顏色 */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.offcanvas a:hover {
+    background: linear-gradient(to right, #9BAABC, #A9B7C5); /* 漸層效果 */
+}
+.content {
+    background-color: #F6F0E3; /* 內容區背景 */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+:root {
+    --fc-border-color: black;
+    
+}
+
+footer {
+    background-color: #6C7B89; /* 底部背景 */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+

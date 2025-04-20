@@ -1,0 +1,37 @@
+
+body {
+    background-color: #EAEAEA; /* 整體背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    background-color: #F6F0E3; /* 登入框背景 */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6D6D6D; /* 標題顏色 */
+}
+.btn-primary {
+    background-color: #A9B7C5; /* 按鈕背景 */
+    border-color: #A9B7C5;
+}
+.btn-primary:hover {
+    background-color: #9BAABC;
+    border-color: #9BAABC;
+}
+.form-text a {
+    color: #6C7B89; /* 忘記密碼連結顏色 */
+    text-decoration: none;
+}
+.form-text a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,129 @@
+/* 設定整體結構 */
+html, body {
+    height: 100%; /* 確保佔滿整個視窗 */
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEAEA; /* 整體背景色 */
+}
+
+header {
+    background-color: #6C7B89; /* 標頭背景 */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bi {
+    color: #F6F0E3;
+}
+
+.container {
+    flex: 1; /* 主內容區域占滿剩餘空間 */
+    
+}
+.offcanvas {
+    background-color: #A9B7C5; /* 左側選單背景 */
+}
+.offcanvas a {
+    color: white; /* 選單文字顏色 */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.offcanvas a:hover {
+    background: linear-gradient(to right, #9BAABC, #A9B7C5); /* 漸層效果 */
+}
+.content {
+    background-color: #F6F0E3; /* 內容區背景 */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+:root {
+    --fc-border-color: black;
+    
+}
+
+footer {
+    background-color: #6C7B89; /* 底部背景 */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* 顏色選擇器容器 */
+.color-picker {
+    position: relative;
+    display: inline-block;
+}
+
+/* 按鈕樣式 */
+.color-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #e8ecf1; /* 按鈕背景色 */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.color-button .selected-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d81b60; /* 預設顏色 */
+}
+
+.color-button .dropdown-icon {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333;
+}
+
+/* 顏色選單 */
+.color-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 100;
+}
+
+/* 顏色選項 */
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.2s;
+}
+
+.color-option:hover {
+    border: 2px solid #ccc;
+}
+
+/* 顯示選單 */
+.color-picker.open .color-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
